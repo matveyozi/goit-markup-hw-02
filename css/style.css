@@ -37,6 +37,27 @@ button {
 	border: none;
 }
 
+.btn {
+	padding: 6px 22px;
+	background: #F5F4FA;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 162%;
+	letter-spacing: 0.03em;
+	color: var(--black-color);
+
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--blue-color);
+	scale: 1.1;
+	color: #FFFFFF;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .title {
 	font-weight: 700;
 	font-size: 36px;
@@ -113,7 +134,7 @@ button {
 	color: var(--gray-color);
 }
 
-.contacts__item a[href^='mailto'] {
+.contacts__item a:hover {
 	color: var(--blue-color);
 }
 
@@ -121,9 +142,8 @@ button {
 	margin-left: 50px;
 }
 
-.title {
-	text-align: center;
-}
+
+
 
 /*MAIN PAGE*/
 
@@ -145,9 +165,9 @@ button {
 	margin-bottom: 40px;
 }
 
-.hero button {
+.hero__btn {
 	display: block;
-	background: var(--blue-color);
+	background: #fff;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	padding: 10px 32px;
@@ -156,7 +176,6 @@ button {
 	font-size: 16px;
 	line-height: 188%;
 	letter-spacing: 0.06em;
-	color: #FFFFFF;
 	margin: 0 auto;
 
 }
@@ -233,7 +252,6 @@ button {
 	line-height: 118%;
 	text-align: center;
 	letter-spacing: 0.03em;
-
 }
 
 .team__item img {
@@ -266,34 +284,16 @@ button {
 
 .filter__item {
 	margin-right: 30px;
-
 }
 
 .filter__item:last-child {
 	margin-right: 0;
-
 }
 
-.filter__btn {
-	padding: 6px 22px;
-	background: #F5F4FA;
-	border: none;
-	border-radius: 4px;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 162%;
-	letter-spacing: 0.03em;
-	color: var(--black-color);
-	cursor: pointer;
-}
+.filter__btn {}
 
 .filter__btn:hover,
-.filter__btn:focus {
-	background-color: var(--blue-color);
-	scale: 1.1;
-	color: #FFFFFF;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+.filter__btn:focus {}
 
 .works__list {
 	display: flex;
@@ -317,7 +317,6 @@ button {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 200%;
-	/* identical to box height, or 200% */
 	letter-spacing: 0.06em;
 	color: var(--black-color);
 	margin-bottom: 4px;
@@ -341,13 +340,20 @@ button {
 }
 
 .footer .logo {
+	display: block;
 	color: #fff;
 	margin-bottom: 20px;
 }
 
 .footer a {
-	display: block;
 	text-decoration: none;
+
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	max-width: 231px;
 }
 
 .address__link {
@@ -367,4 +373,8 @@ button {
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
 	margin-top: 0;
+}
+
+.address__link:hover {
+	color: var(--blue-color);
 }
